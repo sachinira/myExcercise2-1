@@ -3,10 +3,9 @@ import ballerina/java.jdbc;
 import ballerina/io;
 import ballerina/sql;
 
-jdbc:Client employeeDB = check new("jdbc:mysql://localhost:3306/Bussiness","sqluser","password");
+jdbc:Client employeeDB = check new("jdbc:mysql://localhost:3306/Bussiness","sachini","Rootpw@1995");
 
 type Customer record {|
-    int id = 0;
     string name;
     int age;
     string gender;
@@ -14,9 +13,9 @@ type Customer record {|
 
 type UpdateCustomer record {|
     int id;
-    string? name;
-    int? age;
-    string? gender;
+    string name;
+    int age;
+    string gender;
 |};
 
 @http:ServiceConfig {
@@ -103,26 +102,28 @@ service simpleService on new http:Listener(8080) {
     @http:ResourceConfig {
         path:"/customer",
         methods:["PUT"],
-        body:"ucustomer" 
+        body:"customer" 
     }
-    resource function updateResource(http:Caller caller, http:Request request,UpdateCustomer ucustomer) returns @tainted error? {
+    resource function updateResource(http:Caller caller, http:Request request,UpdateCustomer customer) returns @tainted error? {
 
-        io:println(ucustomer);
+        io:println(customer);
 
         json updateStatus = {};
         http:Response response = new;
         //check the update
-        var dbresult =  employeeDB->execute(`UPDATE Customers SET name=${<@untainted><string>ucustomer.name},age=${<@untainted><int>ucustomer.age},gender=${<@untainted><string>ucustomer.gender} WHERE id = ${<@untainted>ucustomer.id}`);
+        var dbresult =  employeeDB->execute(`UPDATE Customers SET name=${<@untainted><string>customer.name},age=${<@untainted><int>customer.age},gender=${<@untainted><string>customer.gender} WHERE id = ${<@untainted>customer.id}`);
 
         if dbresult is sql:ExecutionResult{
-
-
             updateStatus = { "Status": "Data Updated Successfully" };
+            response.statusCode = 200;
+            response.setPayload({"status": updateStatus});
             //check caller->ok(updateStatus);
         }else{
             
-            response.statusCode = 400;
             updateStatus = { "Status": "Data insert was not succsessful"};
+            response.statusCode = 400;
+            response.setPayload({"status": updateStatus});
+
             //check caller->badRequest();
         }
         var respondRet = caller->respond(response);
@@ -144,12 +145,17 @@ service simpleService on new http:Listener(8080) {
         var dbresult =  employeeDB->execute(`DELETE FROM Customers WHERE id = ${<@untainted>id}`);
 
         if dbresult is sql:ExecutionResult{
+
             updateStatus = { "Status": "Data Deleted Successfully" };
+            response.statusCode = 200;
+            response.setPayload({"status": updateStatus});
+ 
             //check caller->ok(updateStatus);
         }else{
 
-            response.statusCode = 400;
             updateStatus = { "Status": "Data not deleted Successfully" };
+            response.statusCode = 400;
+            response.setPayload({"status": updateStatus});
 
             //check caller->badRequest();
         }
