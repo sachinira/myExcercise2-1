@@ -1,0 +1,70 @@
+[2020-10-28 00:47:57,112] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 00:48:46,970] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 01:05:22,953] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 01:06:42,042] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 01:08:43,342] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 01:09:59,116] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+[2020-10-28 12:49:29,386] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at org.ballerinalang.net.http.HttpUtil.getErrorMessage(HttpUtil.java:470)
+	at org.ballerinalang.net.http.HttpUtil.handleFailure(HttpUtil.java:461)
+	at org.ballerinalang.net.http.HttpCallableUnitCallback.notifyFailure(HttpCallableUnitCallback.java:41)
+	at org.ballerinalang.jvm.scheduling.Scheduler.postProcess(Scheduler.java:336)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:292)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:244)
+	at java.lang.Thread.run(Thread.java:748)
+ 
